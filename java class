@@ -294,4 +294,37 @@ public class a23_selection_sort {
     }
 }
 **************************************************************************************************************************************************************
+Ques13 : sliding window (max subarray sum)
+Ans :
+public class sliding_window {
+    // max sub array sum
+    public static int maxSubArray(int arr[], int k){
+        int windowSum = 0;
+
+        int max_sum = Integer.MIN_VALUE;
+
+        // first window
+        for(int i=0; i<k; i++){
+            windowSum += arr[i];
+        }
+        max_sum = windowSum;
+
+        // slide the window
+        for(int i=k; i<arr.length; i++){
+            windowSum += arr[i];
+            // add first element
+            windowSum += arr[i-k];
+            // remove first element
+            max_sum = Math.max(max_sum,windowSum);
+        }
+        return max_sum;
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {3,5,6,7,8};
+        int k=3;
+        System.out.println(maxSubArray(arr,k));
+    }
+}
+******************************************************************************************************************************************************************
 
