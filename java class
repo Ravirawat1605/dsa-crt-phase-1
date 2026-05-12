@@ -1,1 +1,196 @@
+Ques1: operator overloading
+Ans:
+public class a14_operator_overloading {
+    static class complex{
+        int real;
+        int img;
 
+        complex(int real , int img){
+            this.real = real;
+            this.img = img;
+        }
+
+        // function for addition of complex numbers
+        complex add(complex c) {
+
+            int newReal = this.real + c.real;
+            int newImg = this.img + c.img;
+
+            return new complex(newReal, newImg);
+        }
+
+        void display(){
+            System.out.println(real+"+i"+img);
+        }
+    }
+
+    public static void main(String[] args) {
+        complex c1 = new complex(3,4);
+        complex c2 = new complex(2,4);
+        complex c3=  c1.add(c2);
+        c3.display();
+}
+*******************************************************************************************************************************************************************************************************************************
+Ques2:function overloading
+Ans:
+public class a13_function_overloading {
+    static class Student{
+        int length;
+        int breadth;
+
+        int area(int l , int b){
+            return (l*b);
+        }
+        int area(int side){
+            return (side*side);
+        }
+    }
+
+    public static void main(String[] args) {
+        Student obj = new Student();
+        System.out.println("Area of rectangle is"+" "+ obj.area(3,4));
+        System.out.println("Area of sqaure is"+" "+ obj.area(5));
+    }
+}
+********************************************************************************************************************************************************************************************************************************
+Ques3: Operator overloading
+Ans:
+public class a14_operator_overloading {
+    static class complex{
+        int real;
+        int img;
+
+        complex(int real , int img){
+            this.real = real;
+            this.img = img;
+        }
+
+        // function for addition of complex numbers
+        complex add(complex c) {
+
+            int newReal = this.real + c.real;
+            int newImg = this.img + c.img;
+
+            return new complex(newReal, newImg);
+        }
+
+        void display(){
+            System.out.println(real+"+i"+img);
+        }
+    }
+
+    public static void main(String[] args) {
+        complex c1 = new complex(3,4);
+        complex c2 = new complex(2,4);
+        complex c3=  c1.add(c2);
+        c3.display();
+
+    }
+}
+***********************************************************************************************************************************************************************
+Ques4: Virtual function
+Ans:
+public class a15_virtual_function {
+      static class Human{
+          void display() {
+              System.out.println("This is human class");
+
+          }
+          static class person extends Human{
+              @Override
+              void display() {
+                  System.out.println("This is person class");
+
+              }
+          }
+      }
+
+    public static void main(String[] args) {
+          //parent class reference
+          Human obj;
+
+          //object of human class
+          obj = new Human();
+          obj.display();
+
+          //object of child class
+       // obj = new person();
+        // obj.display();
+    }
+}
+*********************************************************************************************************************************************************************
+Ques5:1_D Array
+Ans:
+public class a16_1_d_array {
+    public static void main(String[] args) {
+        int arr[]  = {2,1,3,4,5};
+
+        //user input in array
+        for(int i=0 ; i<=4 ; i++ ){
+            System.out.print(arr[i]);
+        }
+        System.out.println();
+    }
+}
+**********************************************************************************************************************************************************************
+Ques6: sum of array
+Ans:public class a17_array_sum {
+    public static void main(String[] args) {
+
+        //sum of elements of array
+        int arr[] = {2,3,1,0,6};
+        int sum = 0;
+        for(int i=0 ; i<=4;i++){
+            sum = sum+arr[i];
+        }
+        System.out.println("sum is"+" "+sum);
+    }
+}
+***********************************************************************************************************************************************************************
+Ques7: Odd sum and even sum of array
+Ans:
+public class a18_odd_even_sum {
+    public static void main(String[] args) {
+        int arr[] = {5,10,15,20,25};
+        int oddsum = 0;
+        int evensum = 0;
+
+        for(int i=0 ; i<=4 ; i++){
+            if(arr[i]%2 == 0){
+                evensum = evensum + arr[i];
+            }else{
+                oddsum = oddsum + arr[i];
+            }
+        }
+        System.out.println("evensum =" + evensum );
+        System.out.println("oddsum ="+ oddsum);
+    }
+}
+************************************************************************************************************************************************************************
+Ques8 : Reverse Array
+Ans:
+public class a19_reverse_arr {
+    public static void main(String[] args) {
+        int arr[] = {2,3,4,5,6};
+        int reverse = 0;
+        for(int i=4 ; i>=0 ; i--){
+            System.out.print(
+                    arr[i]);
+        }
+        System.out.println();
+    }
+}
+********************************************************************************************************************************************************************************
+Ques9 : Reverse string
+Ans:
+public class a20_reverse_str {
+    public static void main(String[] args) {
+        String str = "Ansh Batra";
+        String reversed  =" ";
+        for(int i = str.length() -1 ; i>=0; i--){
+            reversed = reversed + str.charAt(i);
+        }
+        System.out.println(reversed);
+    }
+}
+*************************************************************************************************
