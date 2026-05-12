@@ -1,5 +1,5 @@
-// two sum input array sorted
-
+Ques167 :two sum input array sorted
+Ans :
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
         
@@ -25,7 +25,7 @@ class Solution {
     }
 }
 *********************************************************************************************************************************************************
-Ques2 : binary search
+Ques704 : binary search
 Ans :
 import java.util.Scanner;
 class Solution {
@@ -48,7 +48,7 @@ class Solution {
     }
 }
 ***************************************************************************************************************************************************************
-Ques3 : find first and last position of element in sorted array
+Ques34 : find first and last position of element in sorted array
 Ans : 
 class Solution {
     public int[] searchRange(int[] nums, int target) {
@@ -100,4 +100,4 @@ class Solution {
     }     
 }
 *****************************************************************************************************************************************************************
-Ques4 : 
+Ques : 
