@@ -348,7 +348,23 @@ public class recursion {
     }
 }
 ****************************************************************************************************************************************************************
-Ques15 : 
+Ques15 : print table of 2 using recursion
 Ans :
+public class recursion_2 {
+    static void printTable(int n,int i) {
+        // base case
+        if (i > 10) {
+            return;
+        }
+        System.out.println(n*i);
+
+        printTable(n,i+1);
+    }
+
+    public static void main(String[] args) {
+        printTable(2,1);
+    }
+}
+******************************************************************************************************************************************************************
 
 
