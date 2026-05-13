@@ -327,4 +327,28 @@ public class sliding_window {
     }
 }
 ******************************************************************************************************************************************************************
+Ques14 : print number 1 to 5 with recursion
+Ans :
+public class recursion {
+    static void printNumber(int n){
+        // base case
+        if(n>5){
+            return;
+        }
+
+        // print current number
+        System.out.println(n);
+
+        // recursive case
+        printNumber(n+1);
+    }
+
+    public static void main(String[] args) {
+        printNumber(1);
+    }
+}
+****************************************************************************************************************************************************************
+Ques15 : 
+Ans :
+
 
